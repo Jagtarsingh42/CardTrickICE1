@@ -44,6 +44,8 @@ public class CardTrick {
         String cardSuit = Card.SUITS[suitNum];
                
 
+        Card luckyCard = new Card(1, "Clubs");
+
         boolean lucky = false;
         for (int i = 0; i < magicHand.length; i++) {
             if (magicHand[i].getValue() == cardValue && magicHand[i].getSuit().equals(cardSuit)) {
