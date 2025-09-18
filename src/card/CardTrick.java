@@ -42,10 +42,8 @@ public class CardTrick {
         System.out.print("Enter a suit (0-3 where 0=Hearts, 1=Diamonds, 2=Clubs, 3=Spades): ");
         int suitNum = sc.nextInt();
         String cardSuit = Card.SUITS[suitNum];
+               
 
-        
-        
-        
         boolean lucky = false;
         for (int i = 0; i < magicHand.length; i++) {
             if (magicHand[i].getValue() == cardValue && magicHand[i].getSuit().equals(cardSuit)) {
