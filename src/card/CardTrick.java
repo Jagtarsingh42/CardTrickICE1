@@ -28,8 +28,7 @@ public class CardTrick {
             c.setValue(r.nextInt(13) + 1);        
             c.setSuit(Card.SUITS[r.nextInt(4)]);  
             magicHand[i] = c;
-            //c.setValue(insert call to random number generator here)
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+            
         }
         
         System.out.println("Magic Hand:");
@@ -46,7 +45,7 @@ public class CardTrick {
 
         
         
-        // check for the lucky card: 2 of Clubs
+        
         boolean lucky = false;
         for (int i = 0; i < magicHand.length; i++) {
             if (magicHand[i].getValue() == cardValue && magicHand[i].getSuit().equals(cardSuit)) {
